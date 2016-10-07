@@ -27,12 +27,14 @@ import org.springframework.context.annotation.ScopeMetadataResolver;
 import org.springframework.core.env.Environment;
 
 /**
- * 动态创建多数据源注册到Spring中
+ * 这里是静态切换数据源的方式，一般不这么做，需要使用动态数据源切换的方式
+ * 创建多数据源注册到Spring中
  *
  * 接口：BeanDefinitionRegistryPostProcessor只要是注入bean, 在上一节介绍过使用方式；
  * 
  * 接口：接口 EnvironmentAware 重写方法 setEnvironment
  * 可以在工程启动时，获取到系统环境变量和application配置文件中的变量。 这个第24节介绍过.
+ * 
  * 
  * 方法的执行顺序是：
  * 
