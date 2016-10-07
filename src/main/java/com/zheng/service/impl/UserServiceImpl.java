@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService {
 	private UserDao userDao;
 	
 	@Override
-//	@DynamicDataSourceAnn("ds1")
+	@DynamicDataSourceAnn("ds3")
 	public List<User> findList() {
 		return userDao.findList();
 	}
